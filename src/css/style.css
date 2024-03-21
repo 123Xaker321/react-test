@@ -4,8 +4,8 @@ body{
     font-family: "Montserrat", sans-serif;
     font-size: 34px;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 200vh;
+    overflow-x: hidden;
     color: white;
     margin: 0;
 }
@@ -18,6 +18,52 @@ body{
     justify-content: center;
     align-items: center;
 }
-h1{
+main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    margin: 10px 0 0 10px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+aside{
+    width: 30%;
+    margin: -10px 0 0 -10px;
+    display: flex;
+}
+.user{
+    background-color: rgb(112, 112, 112);
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+main>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    height: 100vh;  
+}
+main .delete-icon{
+    color: #134b57;
     cursor: pointer;
+    transform: scale(2);
+}
+main .edit-icon{
+    color: #165664;
+    cursor: pointer;
+    transform: scale(2);
+}
+main .delete-icon:hover, main .edit-icon:hover{
+    opacity: 0.5
+}
+.actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    height: 50px;
+    padding: 10px;
 }
