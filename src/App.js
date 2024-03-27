@@ -22,8 +22,8 @@ class App extends React.Component {
     this.editUser = this.editUser.bind(this);
   }
   render() {
-    return (<div><Header title="Список користувачів" />
-      <main><Users users={this.state.users} onEdit={this.editUser} onDelete={this.deleteUser} /></main><aside><AddUser onAdd={this.addUser} /></aside></div>)
+    return (<div><Header title="Список користувачів" /><div id="main_container">
+      <main><Users users={this.state.users} onEdit={this.editUser} onDelete={this.deleteUser} /></main><aside><AddUser onAdd={this.addUser} /></aside></div></div>)
   }
   deleteUser(id) {
     this.setState({

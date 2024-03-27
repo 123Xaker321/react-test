@@ -13,7 +13,7 @@ class Users extends React.Component {
         )
         else
         return (
-            <div className="user"><h3>Користувачів немає</h3></div>
+            <div id="no_users" className="user"><h3>Користувачів немає</h3></div>
             )
     }
 }
